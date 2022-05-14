@@ -183,7 +183,7 @@ async def stock(ctx):
             stocklist.append(f"{service} stock: {len(open(f'{service}.txt', 'r').readlines())} accounts")
         else:
             print("Error! a service that you added in services does not exist ! make sure to double check and remove non existing services")
-     embed = discord.Embed(title="gen stock ", description="shows stock tf will it show", colour= discord.Colour.random())
+     embed = discord.Embed(title="Stock", description="Shows the current stock for every account type", colour= discord.Colour.random())
      embed.add_field(name="Stock", value=  "\n".join(stocklist))
      embed.set_footer(text="Made by Mohameme7#0023")
      await ctx.send(embed=embed)
