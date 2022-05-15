@@ -59,7 +59,7 @@ async def help(ctx, commandname = None):
           embed.set_footer(text="Made by Mohameme7#0023 https://discord.gg/eTTjQbzGTe")
           await ctx.send(embed=embed)
       except:
-          await ctx.send("this command does not exist, type help for more commands")
+          await ctx.send(f"This command does not exist, type {prefix}help for more commands")
 
 @bot.event
 async def on_ready():
