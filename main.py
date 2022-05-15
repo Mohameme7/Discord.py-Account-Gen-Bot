@@ -48,7 +48,7 @@ async def setnotifchannel(ctx, channel: discord.TextChannel = None):
 async def help(ctx, commandname = None):
   if commandname is None:
     em = discord.Embed(title="Help Command", description= "List of commands you can use with the bot, type !help [command] for more info about the command", colour = discord.Colour.random())
-    em.add_field(name= "User Commands", value= f"`{prefix}gen`\n `{prefix}stock`\n `{prefix}ping`\n {prefix}embed")
+    em.add_field(name= "User Commands", value= f"`{prefix}gen`\n `{prefix}stock`\n `{prefix}ping`\n {prefix}`embed`")
     em.add_field(name= "Admin Commands", value= f"`{prefix}setnotifchannel` \n `{prefix}clearstock`\n `{prefix}newcategory`\n `{prefix}removecategory`\n `{prefix}restock`")
     em.set_footer(text="Made by Mohameme7#0023 https://discord.gg/eTTjQbzGTe")
     await ctx.send(embed = em)
